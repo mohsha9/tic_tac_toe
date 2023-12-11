@@ -1,0 +1,204 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  background-color: rgb(173, 211, 255);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.choose-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.headline {
+  margin: 0px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-family: "Permanent Marker", cursive;
+  color: rgb(16, 35, 65);
+}
+
+.choose-button-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 600px;
+}
+
+.js-choose-button-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  transition: 400ms;
+}
+
+.circle-button,
+.js-circle-button {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.cross-button,
+.js-cross-button {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.cross-button,
+.circle-button {
+  cursor: pointer;
+  background-color: white;
+  width: 100px;
+  padding: 10px 0px;
+  border: none;
+  font-size: 25px;
+  font-family: "Permanent Marker", cursive;
+  font-weight: bold;
+  transition: 200ms;
+}
+
+.js-cross-button,
+.js-circle-button {
+  cursor: pointer;
+  width: 100px;
+  padding: 10px 0px;
+  background-color: rgb(72, 157, 255);
+  color: white;
+  border: none;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Permanent Marker", cursive;
+}
+
+.cross-score,
+.circle-score {
+  padding: 10px 20px;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(72, 157, 255);
+
+  font-family: "Permanent Marker", cursive;
+}
+
+.cross-score {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.circle-score {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.button-index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-section {
+  display: grid;
+  grid-template-columns: 80px 80px 80px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.cell {
+  border: none;
+  height: 80px;
+  line-height: 75px;
+  font-size: 50px;
+  font-family: "Permanent Marker", cursive;
+  background-color: rgb(173, 211, 255);
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: rgb(189, 220, 255);
+  transition: 200ms;
+}
+
+.js-button-cell {
+  color: white;
+}
+
+.button-one,
+.button-two,
+.button-four,
+.button-five,
+.button-seven,
+.button-eight {
+  border-right: 5px solid rgb(29, 66, 121);
+}
+
+.button-one {
+  border-top-left-radius: 15px;
+}
+
+.button-three {
+  border-top-right-radius: 15px;
+}
+
+.button-seven {
+  border-bottom-left-radius: 15px;
+}
+
+.button-nine {
+  border-bottom-right-radius: 15px;
+}
+
+.button-one,
+.button-two,
+.button-three,
+.button-four,
+.button-five,
+.button-six {
+  border-bottom: 5px solid rgb(29, 66, 121);
+}
+
+.status-text {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+}
+
+.js-status-text {
+  min-width: 130px;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  transition: 400ms;
+}
+
+.restart-button {
+  margin-top: 30px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 20px;
+  color: white;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 25px;
+  background-color: rgb(29, 66, 121);
+  cursor: pointer;
+}
+
+.restart-button:hover {
+  background-color: rgb(16, 35, 65);
+}
